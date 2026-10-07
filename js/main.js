@@ -37,7 +37,9 @@ function initSite() {
 
       event.preventDefault();
       closeMobileMenu();
-      target.scrollIntoView({ behavior: 'smooth' });
+      const offset = header?.offsetHeight ?? 0;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 
