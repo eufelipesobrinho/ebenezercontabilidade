@@ -1,41 +1,87 @@
-const header = document.querySelector('header');
-const menuToggle = document.querySelector('.menu-toggle');
-const headerCta = document.querySelector('.cta-header');
+let siteReady = false;
 
-function closeMobileMenu() {
-  header?.classList.remove('nav-open');
-  menuToggle?.setAttribute('aria-expanded', 'false');
+function initLucideIcons() {
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 }
 
-function scrollToTarget(selector) {
-  const target = document.querySelector(selector);
-  if (!target) return;
+function initSite() {
+  initLucideIcons();
+  if (siteReady) return;
+  siteReady = true;
 
-  target.scrollIntoView({ behavior: 'smooth' });
-  closeMobileMenu();
-}
+  const header = document.querySelector('.site-header');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('site-nav');
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', (event) => {
-    const href = anchor.getAttribute('href');
-    if (href && href !== '#' && document.querySelector(href)) {
+  function closeMobileMenu() {
+    header?.classList.remove('nav-open');
+    document.body.classList.remove('nav-locked');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.setAttribute('aria-label', 'Abrir menu');
+  }
+
+  function toggleMobileMenu() {
+    const isOpen = header.classList.toggle('nav-open');
+    document.body.classList.toggle('nav-locked', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (event) => {
+      const href = anchor.getAttribute('href');
+      const target = href && href !== '#' ? document.querySelector(href) : null;
+      if (!target) return;
+
       event.preventDefault();
-      scrollToTarget(href);
+      closeMobileMenu();
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  nav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  document.querySelectorAll('.faq-question').forEach((question) => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      const isActive = item.classList.contains('active');
+
+      document.querySelectorAll('.faq-item.active').forEach((openItem) => {
+        openItem.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+
+  menuToggle?.addEventListener('click', toggleMobileMenu);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMobileMenu();
     }
   });
-});
 
-document.querySelectorAll('.faq-question').forEach((question) => {
-  question.addEventListener('click', () => {
-    question.parentElement.classList.toggle('active');
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeMobileMenu();
+    }
   });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  lucide.createIcons();
+  initSite();
 });
 
-headerCta?.addEventListener('click', () => {
-  scrollToTarget('#contato');
-});
-
-menuToggle?.addEventListener('click', () => {
-  const isOpen = header.classList.toggle('nav-open');
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
-});
+if (document.readyState !== 'loading') {
+  initSite();
+}

@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ebenézer Contabilidade | Assessoria Fiscal e Contábil</title>
-    <meta name="description" content="Assessoria fiscal, contábil e gestão de entidades religiosas. Soluções para MEI, empresas e organizações religiosas em Cristo Rei, Piauí.">
-    <meta name="keywords" content="contabilidade, assessoria fiscal, MEI, entidades religiosas, Piauí, Ebenézer Contabilidade">
+    <meta name="description" content="Contabilidade estratégica para micro, pequenas e médias empresas no Piauí. Fature mais e pague menos impostos dentro da lei com a Ebenézer Contabilidade.">
+    <meta name="keywords" content="contabilidade, assessoria fiscal, planejamento tributário, MEI, PMEs, entidades religiosas, Piauí, Ebenézer Contabilidade">
     <meta name="author" content="Ebenézer Contabilidade">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#003D7A">
+    <meta name="theme-color" content="#0B1B2B">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:title" content="Ebenézer Contabilidade | Assessoria Fiscal e Contábil">
-    <meta property="og:description" content="Sua contabilidade descomplicada. Assessoria fiscal, contábil e gestão de entidades religiosas com propósito.">
+    <meta property="og:description" content="Contabilidade estratégica para sua empresa faturar mais e pagar menos impostos dentro da lei.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <header class="site-header">
         <div class="nav-container">
-            <div class="logo">EBEN<span>É</span>ZER</div>
-            <nav>
+            <a href="#inicio" class="logo">EBEN<span>É</span>ZER</a>
+            <nav id="site-nav" aria-label="Principal">
                 <a href="#servicos">Serviços</a>
-                <a href="#beneficios">Benefícios</a>
+                <a href="#beneficios">Diferenciais</a>
                 <a href="#faq">Dúvidas</a>
                 <a href="#contato">Contato</a>
+                <a
+                    class="btn-header-cta btn-header-cta--mobile"
+                    href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Fale com um Contador
+                </a>
             </nav>
-            <button type="button" class="cta-header">Fale Conosco</button>
-            <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <a
+                class="btn-header-cta btn-header-cta--desktop"
+                href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Fale com um Contador
+            </a>
+            <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,298 +53,422 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Sua Contabilidade Descomplicada</h1>
-            <p class="tagline">Assessoria fiscal, contábil e gestão de entidades religiosas com propósito</p>
-            <a href="#contato" class="hero-cta">Solicitar Consultoria</a>
-            <a href="#servicos" class="hero-cta hero-secondary">Conhecer Serviços</a>
+    <section class="hero" id="inicio">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="trust-badge">
+                    <i data-lucide="shield-check"></i>
+                    Assessoria Contábil para Micro, Pequenas e Médias Empresas
+                </p>
+                <h1>Contabilidade estratégica para sua empresa faturar mais e pagar menos impostos dentro da lei</h1>
+                <p class="tagline">Assessoria fiscal, contábil e de compliance com clareza, pontualidade e decisão baseada em números — para empresários que querem crescer com segurança.</p>
+                <div class="hero-actions">
+                    <a
+                        class="btn-primary"
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i data-lucide="message-circle"></i>
+                        Solicitar consultoria
+                    </a>
+                    <a href="#servicos" class="btn-ghost">Conhecer serviços</a>
+                </div>
+            </div>
+            <aside class="hero-panel" aria-label="Indicadores de confiança">
+                <div class="hero-panel-card">
+                    <p class="hero-panel-kicker">Governança fiscal</p>
+                    <ul class="hero-panel-list">
+                        <li>
+                            <span class="hero-panel-icon"><i data-lucide="lock"></i></span>
+                            <div>
+                                <strong>Conformidade contínua</strong>
+                                <span>Obrigações em dia, sem surpresas com o Fisco.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hero-panel-icon"><i data-lucide="trending-down"></i></span>
+                            <div>
+                                <strong>Carga tributária otimizada</strong>
+                                <span>Regime e planejamento alinhados à sua operação.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hero-panel-icon"><i data-lucide="headphones"></i></span>
+                            <div>
+                                <strong>Atendimento de contador</strong>
+                                <span>Canal direto no WhatsApp para decisões do dia a dia.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="servicos">
-        <div class="section-container">
-            <div class="section-title">
-                <h2>Nossos Serviços</h2>
-                <p>Soluções completas para seu negócio crescer com segurança fiscal e legal</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">▲</div>
-                    <h3>Assessoria Contábil</h3>
-                    <p>Gestão completa de sua contabilidade com precisão, conformidade fiscal e relatórios estratégicos para seu negócio.</p>
-                    <a href="#contato" class="service-link">Saiba mais →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">◆</div>
-                    <h3>Consultoria MEI</h3>
-                    <p>Orientação especializada para Micro Empreendedores Individuais sobre tributação, benefícios e obrigações legais.</p>
-                    <a href="#contato" class="service-link">Saiba mais →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">◇</div>
-                    <h3>Entidades Religiosas</h3>
-                    <p>Gestão contábil especializada em conformidade com normas específicas para igrejas e organizações religiosas.</p>
-                    <a href="#contato" class="service-link">Saiba mais →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">■</div>
-                    <h3>Consultoria Fiscal</h3>
-                    <p>Estratégias de otimização fiscal e planejamento tributário para maximizar o resultado do seu negócio.</p>
-                    <a href="#contato" class="service-link">Saiba mais →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">●</div>
-                    <h3>Constituição Societária</h3>
-                    <p>Suporte completo na abertura de empresa, escolha do regime tributário e estruturação legal.</p>
-                    <a href="#contato" class="service-link">Saiba mais →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">+</div>
-                    <h3>Conformidade Legal</h3>
-                    <p>Acompanhamento de obrigações acessórias, transmissão de informações e cumprimento de legislação vigente.</p>
-                    <a href="#contato" class="service-link">Saiba mais →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits" id="beneficios">
-        <div class="section-container">
-            <div class="benefits-grid">
-                <div class="benefits-content">
-                    <h2>Por que escolher a Ebenézer?</h2>
-
-                    <div class="benefit-item">
-                        <div class="benefit-check">✓</div>
-                        <div class="benefit-text">
-                            <h3>Expertise Especializada</h3>
-                            <p>Equipe com conhecimento profundo em contabilidade, tributação e legislação de entidades religiosas.</p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-item">
-                        <div class="benefit-check">✓</div>
-                        <div class="benefit-text">
-                            <h3>Atendimento Personalizado</h3>
-                            <p>Soluções adaptadas à realidade do seu negócio, não soluções genéricas ou desconectadas.</p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-item">
-                        <div class="benefit-check">✓</div>
-                        <div class="benefit-text">
-                            <h3>Consultoria Estratégica</h3>
-                            <p>Não apenas conformidade, mas orientação para potencializar resultados e economizar impostos legalmente.</p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-item">
-                        <div class="benefit-check">✓</div>
-                        <div class="benefit-text">
-                            <h3>Segurança e Tranquilidade</h3>
-                            <p>Cumpra com suas obrigações legais com confiança total, evitando problemas futuros.</p>
-                        </div>
-                    </div>
-
-                    <div class="benefit-item">
-                        <div class="benefit-check">✓</div>
-                        <div class="benefit-text">
-                            <h3>Suporte Contínuo</h3>
-                            <p>Acompanhamento regular e disponibilidade para esclarecer dúvidas e orientar decisões.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="benefits-image">
-                    <div class="benefits-image-content">
-                        <div class="benefits-image-icon">↗</div>
-                        <p class="benefits-image-caption">Crescimento com segurança</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-item">
                 <h3>+690</h3>
-                <p>Clientes Satisfeitos</p>
+                <p>Clientes atendidos</p>
             </div>
             <div class="stat-item">
-                <h3>+15 Anos</h3>
-                <p>De Experiência</p>
+                <h3>+15 anos</h3>
+                <p>De experiência</p>
             </div>
             <div class="stat-item">
                 <h3>100%</h3>
-                <p>Conformidade Legal</p>
+                <p>Conformidade legal</p>
             </div>
             <div class="stat-item">
                 <h3>24/7</h3>
-                <p>Suporte Disponível</p>
+                <p>Suporte via WhatsApp</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <section class="services" id="servicos">
+        <div class="section-container">
+            <div class="section-title">
+                <p class="section-eyebrow">Áreas de atuação</p>
+                <h2>Serviços para a operação inteira da empresa</h2>
+                <p>Do CNPJ à folha, do DAS ao planejamento: estrutura contábil para crescer com previsibilidade fiscal.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon"><i data-lucide="building-2"></i></div>
+                    <h3>Abertura e regularização de empresas</h3>
+                    <p>Constituição societária, escolha do regime tributário e regularização cadastral com acompanhamento completo do processo.</p>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        class="service-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com um contador <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i data-lucide="scale"></i></div>
+                    <h3>Gestão fiscal e tributária</h3>
+                    <p>Apuração, obrigações acessórias e acompanhamento da legislação para manter a empresa em conformidade o ano inteiro.</p>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        class="service-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com um contador <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i data-lucide="users"></i></div>
+                    <h3>Folha de pagamento e BPO financeiro</h3>
+                    <p>Folha, encargos, rotinas trabalhistas e organização financeira para você focar no comercial, não na papelada.</p>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        class="service-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com um contador <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i data-lucide="pie-chart"></i></div>
+                    <h3>Planejamento tributário e redução de custos</h3>
+                    <p>Análise do enquadramento e oportunidades legais de economia — pagar o justo, sem expor a empresa a risco.</p>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        class="service-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com um contador <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Certificado digital e compliance</h3>
+                    <p>Emissão e gestão de certificado, obrigações legais e controles internos para reduzir passivos e autuações.</p>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        class="service-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com um contador <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon"><i data-lucide="file-text"></i></div>
+                    <h3>Assessoria contábil mensal</h3>
+                    <p>Escrituração, relatórios gerenciais e orientação contínua para decisões com base em números, não em achismo.</p>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        class="service-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Falar com um contador <i data-lucide="arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <div class="section-container">
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <p class="section-eyebrow">Por que a Ebenézer</p>
+                    <h2>Solidez técnica com atendimento de quem responde de verdade</h2>
+                    <p class="benefits-lead">Não entregamos só guias. Entregamos leitura fiscal, prazo cumprido e um canal direto com o contador.</p>
+                    <div class="benefit-item">
+                        <div class="benefit-check"><i data-lucide="lock"></i></div>
+                        <div class="benefit-text">
+                            <h3>Segurança e sigilo</h3>
+                            <p>Processos, documentos e obrigações tratados com confidencialidade e trilha de conformidade.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check"><i data-lucide="cpu"></i></div>
+                        <div class="benefit-text">
+                            <h3>Tecnologia a serviço do prazo</h3>
+                            <p>Rotinas digitais para envio de documentos, acompanhamento e menos retrabalho no seu dia a dia.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check"><i data-lucide="clock"></i></div>
+                        <div class="benefit-text">
+                            <h3>Pontualidade fiscal</h3>
+                            <p>Calendário de obrigações sob controle para sua empresa nunca ser pega de surpresa.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check"><i data-lucide="headphones"></i></div>
+                        <div class="benefit-text">
+                            <h3>Atendimento ágil</h3>
+                            <p>WhatsApp, e-mail e orientação objetiva quando a decisão não pode esperar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-panel">
+                    <div class="benefits-panel-inner">
+                        <p class="benefits-panel-label">Especialidade</p>
+                        <h3>Também para entidades religiosas</h3>
+                        <p>Normas específicas de igrejas e organizações sem fins lucrativos, com a mesma rigorosidade de uma operação empresarial.</p>
+                        <ul>
+                            <li><i data-lucide="check"></i> Prestação de contas transparente</li>
+                            <li><i data-lucide="check"></i> Obrigações acessórias em dia</li>
+                            <li><i data-lucide="check"></i> Orientação para liderança e tesouraria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="testimonials">
         <div class="section-container">
             <div class="section-title">
+                <p class="section-eyebrow">Reputação</p>
                 <h2>O que nossos clientes dizem</h2>
-                <p>Histórias reais de empreendedores que cresceram com nossa assessoria</p>
+                <p>Empresários e lideranças que passaram a decidir com números e dormir mais tranquilos.</p>
             </div>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
+                <article class="testimonial-card">
+                    <div class="stars" aria-label="5 de 5 estrelas">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
                     <p class="testimonial-text">"A Ebenézer transformou minha forma de entender a contabilidade. Antes eu tinha medo de cometer erros, agora tenho confiança total."</p>
                     <div class="testimonial-author">Marina Silva</div>
-                    <div class="testimonial-role">Microempreendedora - Comércio</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-role">Microempreendedora — Comércio</div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="stars" aria-label="5 de 5 estrelas">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
                     <p class="testimonial-text">"Profissionais competentes que entendem a realidade de nossas organizações religiosas. Recomendo muito!"</p>
                     <div class="testimonial-author">Pastor João</div>
-                    <div class="testimonial-role">Assembleia de Deus - Cristo Rei</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-role">Assembleia de Deus — Cristo Rei</div>
+                </article>
+                <article class="testimonial-card">
+                    <div class="stars" aria-label="5 de 5 estrelas">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
                     <p class="testimonial-text">"Economizei mais que o valor da assessoria em impostos. Muito bom mesmo!"</p>
                     <div class="testimonial-author">Carlos Mendes</div>
-                    <div class="testimonial-role">Empresário - Serviços</div>
-                </div>
+                    <div class="testimonial-role">Empresário — Serviços</div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="section-container">
             <div class="section-title">
-                <h2>Perguntas Frequentes</h2>
-                <p>Tire suas dúvidas sobre nossos serviços</p>
+                <p class="section-eyebrow">Dúvidas</p>
+                <h2>Perguntas frequentes</h2>
+                <p>Transparência antes do contrato. Se a sua pergunta não estiver aqui, fale conosco no WhatsApp.</p>
             </div>
-
             <div class="faq-container">
                 <div class="faq-item active">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question">
                         <span>Qual é o valor mínimo para contratar seus serviços?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                        <i data-lucide="chevron-down" class="faq-toggle"></i>
+                    </button>
                     <div class="faq-answer">
-                        Não temos um valor mínimo fixo. Oferecemos pacotes personalizados de acordo com o tamanho e complexidade do seu negócio. Desde MEI até empresas maiores, temos uma solução adequada. Entre em contato para uma consultoria sem compromisso.
+                        Não temos um valor mínimo fixo. Oferecemos pacotes personalizados de acordo com o tamanho e a complexidade do seu negócio. Desde MEI até empresas maiores, temos uma solução adequada. Entre em contato para uma consultoria sem compromisso.
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question">
                         <span>Como funciona o atendimento?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                        <i data-lucide="chevron-down" class="faq-toggle"></i>
+                    </button>
                     <div class="faq-answer">
-                        Oferecemos atendimento personalizado via WhatsApp, email, telefone e reuniões presenciais. Nosso compromisso é estar disponível quando você precisar, garantindo uma comunicação clara e respuestas rápidas.
+                        Atendimento personalizado via WhatsApp, e-mail, telefone e reuniões. O compromisso é clareza e resposta rápida quando a decisão da empresa não pode esperar.
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question">
                         <span>Vocês atendem entidades religiosas?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                        <i data-lucide="chevron-down" class="faq-toggle"></i>
+                    </button>
                     <div class="faq-answer">
-                        Sim! Temos expertise especial em gestão contábil de igrejas e organizações religiosas, compreendendo as normas específicas e obrigações legais deste segmento. É uma de nossas especialidades.
+                        Sim. Temos expertise em gestão contábil de igrejas e organizações religiosas, com as normas e obrigações específicas desse segmento. É uma de nossas especialidades.
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
+                    <button type="button" class="faq-question">
                         <span>Como posso economizar impostos legalmente?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                        <i data-lucide="chevron-down" class="faq-toggle"></i>
+                    </button>
                     <div class="faq-answer">
-                        Realizamos análise completa da sua situação tributária e identificamos oportunidades de otimização. Escolha do melhor regime tributário, deduções válidas, e estratégias de planejamento fiscal são parte essencial do nosso trabalho.
+                        Fazemos análise da situação tributária e identificamos oportunidades de otimização: regime mais adequado, deduções válidas e planejamento fiscal — sempre dentro da lei.
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Preciso abrir uma empresa, como vocês podem ajudar?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                    <button type="button" class="faq-question">
+                        <span>Preciso abrir uma empresa. Como vocês podem ajudar?</span>
+                        <i data-lucide="chevron-down" class="faq-toggle"></i>
+                    </button>
                     <div class="faq-answer">
-                        Auxiliamos desde a escolha da melhor estrutura legal até a constituição da empresa. Orientamos sobre o regime tributário mais adequado, documentações necessárias e acompanhamos todo o processo.
+                        Auxiliamos da escolha da estrutura legal até a constituição. Orientamos o regime tributário, reunimos documentações e acompanhamos o processo até a empresa operar em conformidade.
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Qual é o prazo para fazer minha declaração de imposto de renda?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
+                    <button type="button" class="faq-question">
+                        <span>Qual é o prazo da declaração de imposto de renda?</span>
+                        <i data-lucide="chevron-down" class="faq-toggle"></i>
+                    </button>
                     <div class="faq-answer">
-                        A declaração de imposto de renda pessoa física tem prazo até o final de maio a cada ano. Para pessoa jurídica, o prazo é até o segundo mês após o encerramento do exercício. Oferecemos acompanhamento para garantir que você não perca o prazo.
+                        A declaração de IRPF costuma ir até o final de maio. Para pessoa jurídica, o prazo depende do encerramento do exercício. Acompanhamos o calendário para você não perder a data.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
     <section class="final-cta" id="contato">
-        <div>
-            <h2>Pronto para descomplicar sua contabilidade?</h2>
-            <p>Fale com nossos especialistas e descubra como podemos ajudar seu negócio a crescer com segurança e tranquilidade.</p>
+        <div class="final-cta-inner">
+            <p class="section-eyebrow section-eyebrow--light">Próximo passo</p>
+            <h2>Pronto para colocar a contabilidade no mesmo nível da sua operação?</h2>
+            <p>Fale com um contador da Ebenézer e receba uma leitura objetiva da sua situação fiscal — sem compromisso.</p>
             <div class="cta-buttons">
-                <a href="https://wa.me/558699467802" target="_blank" class="btn-primary">WhatsApp</a>
-                <a href="mailto:ebenezercontabilidade.pj@gmail.com" class="btn-secondary">Email</a>
+                <a
+                    href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary"
+                >
+                    <i data-lucide="phone"></i>
+                    WhatsApp (86) 99467-4802
+                </a>
+                <a href="mailto:ebenezercontabilidade.pi@gmail.com" class="btn-secondary">
+                    <i data-lucide="mail"></i>
+                    E-mail
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Ebenézer</h4>
-                <p>Assessoria Contábil e Consultoria Fiscal com expertise em entidades religiosas e micro empreendedores.</p>
+                <h4>Ebenézer Contabilidade</h4>
+                <p>Assessoria contábil e consultoria fiscal para micro, pequenas e médias empresas e entidades religiosas.</p>
                 <div class="social-links">
-                    <a href="https://instagram.com/ebenezer.contabilidade" target="_blank" title="Instagram">∘</a>
-                    <a href="https://wa.me/558699467802" target="_blank" title="WhatsApp">→</a>
+                    <a href="https://instagram.com/ebenezer.contabilidade" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a
+                        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="WhatsApp"
+                        aria-label="WhatsApp"
+                    >
+                        <i data-lucide="message-circle"></i>
+                    </a>
                 </div>
             </div>
-
             <div class="footer-section">
                 <h4>Serviços</h4>
-                <a href="#servicos">Assessoria Contábil</a><br>
-                <a href="#servicos">Consultoria MEI</a><br>
-                <a href="#servicos">Entidades Religiosas</a><br>
-                <a href="#servicos">Consultoria Fiscal</a>
+                <a href="#servicos">Abertura de empresas</a>
+                <a href="#servicos">Gestão fiscal</a>
+                <a href="#servicos">Folha e BPO</a>
+                <a href="#servicos">Planejamento tributário</a>
             </div>
-
             <div class="footer-section">
                 <h4>Contato</h4>
-                <p>📍 Cristo Rei - Piauí<br>
-                   📞 (86) 99467-4802<br>
-                   ✉️ ebenezercontabilidade.pj@gmail.com</p>
+                <p class="footer-contact-item">
+                    <i data-lucide="map-pin"></i>
+                    Cristo Rei — Piauí
+                </p>
+                <p class="footer-contact-item">
+                    <i data-lucide="phone"></i>
+                    <a href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria." target="_blank" rel="noopener noreferrer">(86) 99467-4802</a>
+                </p>
+                <p class="footer-contact-item">
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:ebenezercontabilidade.pi@gmail.com">ebenezercontabilidade.pi@gmail.com</a>
+                </p>
             </div>
-
             <div class="footer-section">
                 <h4>Atendimento</h4>
-                <p>Segunda a Sexta<br>
-                   08:00 - 18:00<br>
-                   Suporte via WhatsApp<br>
-                   disponível 24/7</p>
+                <p>Segunda a sexta<br>08:00 — 18:00<br>Suporte via WhatsApp<br>disponível 24/7</p>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>&copy; 2026 Ebenézer Contabilidade. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/5586994674802?text=Olá!%20Vim%20pelo%20site%20da%20Ebenézer%20e%20gostaria%20de%20uma%20consultoria."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale no WhatsApp"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
 
     <script type="module" src="/js/main.js"></script>
 </body>
