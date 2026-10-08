@@ -65,10 +65,13 @@ a {
     text-decoration: none;
     flex-shrink: 0;
     line-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--primary-dark);
 }
 
 .logo img {
-    height: 52px;
+    height: 56px;
     width: auto;
     max-width: none;
     display: block;
@@ -1203,7 +1206,7 @@ a.footer-contact-item svg {
     }
 
     .logo img {
-        height: 44px;
+        height: 46px;
         max-width: none;
     }
 }
@@ -1212,10 +1215,11 @@ a.footer-contact-item svg {
     .nav-container {
         gap: 0.75rem;
         padding: 0.75rem 1rem;
+        align-items: center;
     }
 
     .logo img {
-        height: 42px;
+        height: 44px;
         max-width: none;
     }
 }
