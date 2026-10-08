@@ -1031,11 +1031,16 @@ a.footer-contact-item {
 
 a.footer-contact-item svg {
     margin-top: 0;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+    display: block;
 }
 
 .footer-instagram:hover {
+    color: var(--secondary-accent);
+}
+
+.footer-instagram:hover svg {
     color: var(--secondary-accent);
 }
 
@@ -1073,8 +1078,10 @@ a.footer-contact-item svg {
 }
 
 .social-links svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    flex-shrink: 0;
 }
 
 /* WhatsApp float */
